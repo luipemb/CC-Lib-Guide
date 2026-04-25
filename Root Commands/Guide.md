@@ -182,7 +182,7 @@
 
 </details>
 
-
+---
 
 ## <p align="center"> Root Commands - Setting your repository - </p>
 
