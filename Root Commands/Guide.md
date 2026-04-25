@@ -95,11 +95,11 @@
 
 - Manages CC:Tweaked file system in one line.
 - Basics:
-  - "file" Is the file's name where you will perform the change.   
-  - "act" Means what you are going to perform (write, read, etc).   
-  - "v" Means what will be used for the action (usually strings).   
-  - "t" Stands for "table". In case you are going to perform the change in a specific table, you should mention its name.   
-  - (Special) this() - When performing changes in unnmaed tables. Still have limitations, and I'm aware of them. It will definetly change in the next update.   
+  - **"file"** - Is the file's name where you will perform the change.   
+  - **"act"** - Means what you are going to perform (write, read, etc).   
+  - **"v"** - Means what will be used for the action (usually strings).   
+  - **"t"** - Stands for "table". In case you are going to perform the change in a specific table, you should mention its name.   
+  - **(Special) this()** - When performing changes in unnmaed tables. Still have limitations, and I'm aware of them. It will definetly change in the next update.   
   - Note: Some aspects may be a bit confusing. Everything will be simplified in further updates.   
 
 - Variables for "act":
