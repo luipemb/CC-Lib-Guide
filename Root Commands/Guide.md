@@ -1,4 +1,4 @@
-## **V0.5R** -- Latest version
+## **V0.6R** -- Latest version
 
 # <p align="center"> Starting with CC:Lib </p>
 ## <p align="center"> Root Commands - Utils and basics - </p>
@@ -98,9 +98,7 @@
   - **"file"** - Is the file's name where you will perform the change.   
   - **"act"** - Means what you are going to perform (write, read, etc).   
   - **"v"** - Means what will be used for the action (usually strings).   
-  - **"t"** - Stands for "table". In case you are going to perform the change in a specific table, you should mention its name.   
-  - **(Special) this()** - When performing changes in unnmaed tables. Still have limitations, and I'm aware of them. It will definetly change in the next update.   
-  - Note: Some aspects may be a bit confusing. Everything will be simplified in further updates.   
+  - **"t"** - Stands for "table". In case you are going to perform the change in tables, you should this argument.   
 
 - Variables for "act":
   - **w -- Write**   
@@ -133,34 +131,24 @@
   ```
   > file("newfile", w, "hello") -- Wrote "hello" in the file.
       ============ newfile =====================
-      "hello"
-      ==========================================
-  > file("newfile", a, "hi") -- Added "hi"
-      ============ newfile =====================
-      "hello"
-      "hi"
-      ==========================================
-  > file("newfile", w, "nothing") -- Wrote "nothing"
-      ============ newfile =====================
-      "nothing"
-      ==========================================
-  > file("newfile", rmv, "nothing") -- Removed "nothing"
-      ============ newfile =====================
-      ==========================================
-  ```
-- Using "this()"
-  ```
-  -- Suppose that "newfile" has an unnamed table inside.
-      ============ newfile =====================
-      {}
-      ==========================================
-  > file("newfile", w, this("hello")) -- Wrote "hello" inside the unnamed table
-      ============ newfile =====================
       {
       "hello"
       }
       ==========================================
-  > file("newfile", rmv, this("hello")) -- Removed "hello" from the table
+  > file("newfile", a, "hi") -- Added "hi"
+      ============ newfile =====================
+      {
+      "hello"
+      "hi"
+      }
+      ==========================================
+  > file("newfile", w, "nothing") -- Wrote "nothing"
+      ============ newfile =====================
+      {
+      "nothing"
+      }
+      ==========================================
+  > file("newfile", rmv, "nothing") -- Removed "nothing"
       ============ newfile =====================
       {}
       ==========================================
@@ -179,6 +167,30 @@
         ==========================================
     -- In this case, the returned value will be unserialized.
     ```
+- In tables
+  ```
+  > file("test", w, "hi", true) -- Only the first unnamed table.
+      ============ newfile =====================
+      {
+        {"hi"}
+      }
+      ==========================================
+  > file("test", w, "hello", "A") -- Table named "A"
+      ============ newfile =====================
+      {
+        {"hi"}
+        A = {"hello"}
+      }
+      ==========================================
+  > file("test", w, "hello", 1) -- Index only works for unnamed tables
+      ============ newfile =====================
+      {
+        {"hello"}
+        A = {"hello"}
+      }
+      ==========================================
+  
+  ```
 
 </details>
 
