@@ -1,4 +1,4 @@
-## **V0.6R** -- Latest version
+## **V0.6.fix** -- Latest version
 
 # <p align="center"> Starting with CC:Lib </p>
 ## <p align="center"> Root Commands - Utils and basics - </p>
