@@ -1,4 +1,4 @@
-## **V0.6R.fix** -- Latest version
+## **V0.7R** -- Latest version
 
 # <p align="center"> Starting with CC:Lib </p>
 ## <p align="center"> Root Commands - Utils and basics - </p>
@@ -222,7 +222,43 @@
 
 ---
 
+<details>
+<summary><h3>Messages</h3></summary>
 
+- Display messages when importing the file.
+- Variables:
+  > **loaderM1:** Text in gray   
+  > **loaderM2:** Text in white   
+  > **loaderW1:** Text in yellow between "==============="   
+  > **loaderW2:** Text in red between "!!"   
+  > **loaderW3:** Text in red
+- Example:
+   ```
+  loaderM1:
+  Example (in gray)
+  ```
+  ```
+  loaderM2:
+  Example (in white)
+  ```
+  ```
+  loaderW1:
+  =================================
+  Example
+  =================================
+  ```
+  ```
+  loaderW2:
+  !! Example !!
+  ```
+  ```
+  loaderW3:
+  Example (in red)
+  ```
+
+</details>
+
+---
 
 
 
