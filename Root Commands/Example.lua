@@ -2,6 +2,9 @@
 
 vers = 1.0 -- The version (please)
 
+loaderM1 = "loaderM1 example"
+loaderM2 = "example in white"
+loaderW3 = "warning!!!"
 
 function createfile(name)
   local fl = fs.open(name)
