@@ -98,7 +98,7 @@
   - **"file"** - Is the file's name where you will perform the change.   
   - **"act"** - Means what you are going to perform (write, read, etc).   
   - **"v"** - Means what will be used for the action (usually strings).   
-  - **"t"** - Stands for "table". In case you are going to perform the change in tables, you should this argument.   
+  - **"t"** - Stands for "table". In case you are going to perform the change in tables, you should use this argument.   
 
 - Variables for "act":
   - **w -- Write**   
