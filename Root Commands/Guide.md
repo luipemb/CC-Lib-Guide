@@ -1,4 +1,4 @@
-## **V0.7R** -- Latest version
+## **V0.8R** -- Latest version
 
 # <p align="center"> Starting with CC:Lib </p>
 ## <p align="center"> Root Commands - Utils and basics - </p>
@@ -73,6 +73,14 @@
 - Sets an existing variable to a bool state.
   > set("stablecheck", false) >> Sets the existing variable "stablecheck" to false.
 
+</details>
+
+---
+
+<details>
+<summary><h3>repair()</h3></summary>
+
+- Repairs certain files.
 </details>
 
 ---
