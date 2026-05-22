@@ -1,4 +1,4 @@
-## **V0.8R** -- Latest version
+## **V0.9R** -- Latest version
 
 # <p align="center"> Starting with CC:Lib </p>
 ## <p align="center"> Root Commands - Utils and basics - </p>
@@ -80,7 +80,7 @@
 <details>
 <summary><h3>repair()</h3></summary>
 
-- Repairs certain files.
+- Repairs core files and .lfs files.
 </details>
 
 ---
@@ -102,6 +102,7 @@
 <summary><h3>[BETA] file(file, act, v, t)</h3></summary>
 
 - Manages CC:Tweaked file system in one line.
+- Marks files as ".lfs"
 - Basics:
   - **"file"** - Is the file's name where you will perform the change.   
   - **"act"** - Means what you are going to perform (write, read, etc).   
